@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".LoginSuccessfulActivity">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="62dp"
+        android:text="Welcome baby!"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="212dp"
+        android:text="It's too late to escape."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </android.support.constraint.ConstraintLayout>

@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginSuccessfulActivity"></activity>
+        <activity android:name=".LoginSuccessfulActivity" />
+        <activity android:name=".Test"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
