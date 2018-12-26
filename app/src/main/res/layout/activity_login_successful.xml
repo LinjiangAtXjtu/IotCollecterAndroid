@@ -22,10 +22,34 @@
         android:id="@+id/textView5"
         android:layout_width="148dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginBottom="69dp"
         android:text="It's too late to escape."
+        app:layout_constraintBottom_toTopOf="@+id/labText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labText"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="21dp"
+        android:text="data not ready"
+        app:layout_constraintBottom_toTopOf="@+id/stepText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:text="data not ready"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/labText" />
 </android.support.constraint.ConstraintLayout>
