@@ -3,6 +3,7 @@ package com.example.a59526.iotcollecter;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,10 +45,11 @@ public class LoginActivity extends AppCompatActivity {
                 login();
             }
         });
+        SharedPreferences preferences = getSharedPreferences("data",MODE_PRIVATE);
     }
 
     //登录到服务器
-    public void login(){
+    public void login() {
         //1.创建OkHttpClient对象
         OkHttpClient okHttpClient = new OkHttpClient();
         //2.通过new FormBody()调用build方法,创建一个RequestBody,可以用add添加键值对
@@ -57,6 +59,10 @@ public class LoginActivity extends AppCompatActivity {
         //4.创建一个call对象,参数就是Request请求对象
         Call call = okHttpClient.newCall(request);
         //5.请求加入调度,重写回调方法
+        SharedPreferences.Editor editor = getSharedPreferences("data",MODE_PRIVATE).edit();
+        editor.putString("username", userName.getText().toString());
+        editor.putString("pwd", password.getText().toString());
+        editor.commit();
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

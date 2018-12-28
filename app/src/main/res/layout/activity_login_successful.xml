@@ -7,19 +7,19 @@
     tools:context=".LoginSuccessfulActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/welcome"
         android:layout_width="114dp"
         android:layout_height="0dp"
         android:layout_marginTop="121dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginBottom="248dp"
         android:text="Welcome baby!"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toTopOf="@+id/stepText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/stepSumOfYesterday"
         android:layout_width="148dp"
         android:layout_height="0dp"
         android:layout_marginTop="241dp"
@@ -51,5 +51,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labText" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
 </android.support.constraint.ConstraintLayout>
